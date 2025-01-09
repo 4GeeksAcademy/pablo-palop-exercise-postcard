@@ -1,0 +1,106 @@
+* {
+	/*border: 1px dashed red;*/
+	min-height: 10px;
+}
+
+body {
+	background: black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.postcard {
+	width: 400px;
+	min-height: 400px;
+	margin: auto;
+	background: white;
+	color: black;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.postcard-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.postcard-header img {
+	height: 50px;
+	width: 50px;
+}
+
+.postcard-header h1 {
+	font-size: 1.8em;
+	margin: 0;
+	color: black;
+}
+
+.postcard-body {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 10px;
+}
+
+.postcard-body .body-left,
+.postcard-body .body-right {
+	width: 50%;
+}
+
+.postcard-body .body-left p {
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 10px 0;
+}
+
+.postcard-body .body-right {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid grey;
+	border-radius: 5px;
+	font-size: 1em;
+	font-family: inherit;
+}
+
+textarea {
+	resize: none;
+	height: 80px;
+}
+
+.postcard-footer {
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+button {
+	background-color: grey;
+	color: black;
+	border: 1px solid grey;
+	padding: 10px 20px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-family: inherit;
+}
+
+button:hover {
+	background-color: darkgrey;
+}
